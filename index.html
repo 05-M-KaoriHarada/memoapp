@@ -13,7 +13,8 @@
 <body>
     <header>
         <div class="top">
-            <img src="Eye-Benders-Shutterstock1.webp" alt="">
+            <img id="moyamoya" src="Eye-Benders-Shutterstock1.webp" alt="">
+            <img id="oyasumi" src="23537523.jpg" alt="">
             <h1>イヤなことを頭から追い出しちゃうメモ</h1>
         </div>
         <h3>今日あったイヤなことを一つずつ書き出して、まとめて捨てちゃおう！</h3>
@@ -50,7 +51,7 @@
             $("#clear").hide();
             $("#reset").hide();
             $("#message").hide();
-
+            $("#oyasumi").hide();
 
 
             //1.Save クリックイベント
@@ -72,11 +73,13 @@
                     $("#list").empty();
                     $("#message").fadeIn(4000);
                     $("#reset").fadeIn(4000);
+                    $("#oyasumi").fadeIn(4000);
                 });
                 $("#clear").fadeOut(4000);
                 $("h3").fadeOut(4000);
                 $(".output").fadeOut(4000);
                 $("#save").fadeOut(4000);
+                $("#moyamoya").fadeOut(4000);
                 
             });
 
