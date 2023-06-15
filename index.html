@@ -15,9 +15,11 @@
         <div class="top">
             <img id="moyamoya" src="Eye-Benders-Shutterstock1.webp" alt="">
             <img id="oyasumi" src="23537523.jpg" alt="">
-            <h1>イヤなことを頭から追い出しちゃうメモ</h1>
+            <h1 id="title">イヤなことを頭から追い出しちゃうメモ</h1>
+            <h1 id="message">明日は良い日になりますように...</h1>
         </div>
         <h3>今日あったイヤなことを一つずつ書き出して、まとめて捨てちゃおう！</h3>
+
     </header>
 
     <div class="output">
@@ -42,7 +44,6 @@
         <!-- ここに追加データが挿入される -->
     </table>
 
-    <h2 id="message">明日は良い日になりますように...</h2>
     <button id="clear">なかったことにする ♪</button>
     <button id="reset">リセット</button>
 
@@ -80,7 +81,7 @@
                 $(".output").fadeOut(4000);
                 $("#save").fadeOut(4000);
                 $("#moyamoya").fadeOut(4000);
-                
+                $("h1").fadeOut(4000);
             });
 
             //3.ページ読み込み：保存データ取得表示
